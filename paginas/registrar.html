@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Registrarse</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../estilos.css'>
+
+</head>
+
+<body>
+    <form id="registerForm" class="formulario">
+        <h1>Registrarse</h1>
+
+        <div>
+            <label id="labelNombreUsuario" for="nombreUsuario">Nombre de usuario</label>
+            <input type="text" id="nombreUsuario" autocomplete="username"/>
+        </div>
+
+        <div>
+            <label id="labelContraseniaUsuario1" for="contraseniaUsuario">Contraseña</label>
+            <input type="password" id="contraseniaUsuario" autocomplete="new-password"/>
+        </div>
+        <div>
+            <label id="labelRepetirContrasenia" for="repetirContrasenia">Repetir contraseña</label>
+            <input type="password" id="repetirContrasenia" autocomplete="new-password"/>
+        </div>
+        
+        <div id="errorMessage">
+
+        </div>
+        <div id="successfulMessage">
+
+        </div>
+
+        <div>
+            <button type="submit" id="boton-registrar">Registrarse</button>
+        </div>
+
+    </form>
+    
+    <script src="../Clases/usuario.js"></script>
+    <script src="../constants/index.js"></script>
+    <script src='../scripts/Registrar.js'></script>
+    
+</body>
+
+</html>

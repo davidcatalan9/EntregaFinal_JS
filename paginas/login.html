@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Iniciar sesion</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../estilos.css'>
+
+</head>
+
+<body>
+    <form id="loginForm" class="formulario">
+        <h1>Iniciar sesion</h1>
+
+        <div>
+            <label id="labelNombreUsuario" for="nombreUsuario">Nombre de usuario</label>
+            <input type="text" id="nombreUsuario" autocomplete="username" autofocus="true"/>
+        </div>
+
+        <div>
+            <label id="labelContrasenia" for="contrasenia">Contraseña</label>
+            <input type="password" id="contrasenia" autocomplete="current-password"/>
+        </div>
+
+        <div id="errorMessage">
+
+        </div>
+        <div id="successfulMessage">
+
+        </div>
+
+        <div>
+            <button type="submit" id="boton-iniciar-sesion">Inciar sesion</button>
+        </div>
+
+        </div>
+    </form>
+
+    
+    <script src='../Clases/usuario.js'></script>
+    <script src="../constants/index.js"></script>
+    <script src="../scripts/Login.js"></script>
+</body>
+
+</html>

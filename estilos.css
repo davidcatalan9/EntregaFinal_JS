@@ -1,0 +1,59 @@
+body {
+    font-family: sans-serif;
+    background-color: #fff;
+  }
+  
+  header {
+    background-color: #13c21c;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+  
+  p {
+    font-size: 0.9em;
+  }
+  
+  section {
+    margin-top: 20px;
+  }
+  
+  .relojes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+  }
+  footer {
+    padding: 1rem;
+    
+    text-align: center;
+    background-color: cornflowerblue;
+  }
+
+  footer p {
+    font-size: 2rem ;
+  }
+
+.azul {
+    color: blue;
+    background-color: antiquewhite;
+   
+}
+
+.tamReloj {
+    width:350px;
+    height:350px;
+}
+  
+
+  /* Estilo personalizado para el tamaño del texto del menú */
+.navbar-nav.navbar-nav-lg .nav-link {
+    font-size: 2rem; 
+    color: green;
+}
+

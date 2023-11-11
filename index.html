@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PreEntrega3 - JavaScript </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PreEntrega3 - JavaScript </title>
+    <link rel="stylesheet" href="estilos.css">
+    <!-- Agrega la biblioteca Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+
+  <body>
+
+    <!-- Cabecera -->
+    <header>
+      <h1>Venta de relojes de pulsera</h1>
+      <p>Encuentra el reloj perfecto para ti</p>
+      <div>
+
+        <!-- Navbar de Bootstrap -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <!-- <a class="navbar-brand" href="#">Navegación</a> -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav navbar-nav-lg">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section-carrito">Carro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/registrar.html">Registrar</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <h3 class="azul">PreEntrega3 - David Catalan (c) 2023 </h3>
+
+    <div>
+
+      <!-- Galería de imágenes -->
+      <section id="galeria">
+        <h2>Galería de relojes</h2>
+        <ul id="productos-container">
+
+          <div class="relojes">
+            <!-- Imagen 1 -->
+            <div class="reloj">
+
+              <img src="imagenes/reloj-1.jpg" class="tamReloj">
+              <h4>Reloj de pulsera analógico</h4>
+              <p>Un elegante reloj analógico para cualquier ocasión</p>
+              <p>$15.000</p>
+              <button type="button" class="addButton">Agregar</button>
+            </div>
+
+            <!-- Imagen 2 -->
+            <div class="reloj">
+              <img src="imagenes/reloj-2.jpg" class="tamReloj">
+              <h4>Reloj de pulsera digital</h4>
+              <p>Un práctico reloj digital para el día a día</p>
+              <p>$25.000</p>
+              <button type="button" class="addButton">Agregar</button>
+            </div>
+
+            <!-- Imagen 3 -->
+            <div class="reloj">
+              <img src="imagenes/reloj-3.jpg" class="tamReloj">
+              <h4>Reloj de pulsera inteligente</h4>
+              <p>Un reloj inteligente con todas las funciones</p>
+              <p>$32.000</p>
+              <button type="button" class="addButton">Agregar</button>
+            </div>
+
+            <!-- Imagen 4 -->
+            <div class="reloj">
+              <img src="imagenes/reloj-4.jpg" class="tamReloj">
+              <h4>Reloj de pulsera vintage</h4>
+              <p>Un reloj de pulsera con un toque retro</p>
+              <p>$95.000</p>
+              <button type="button" class="addButton">Agregar</button>
+            </div>
+
+            <!-- Imagen 5 -->
+            <div class="reloj">
+              <img src="imagenes/reloj-5.jpg" class="tamReloj">
+              <h4>Reloj de pulsera deportivo</h4>
+              <p>Un reloj de pulsera resistente para el uso diario</p>
+              <p>$15.000</p>
+              <button type="button" class="addButton">Agregar</button>
+            </div>
+        </ul>
+    </div>
+    </section>
+    <section>
+      <h3 id="section-carrito">Carrito</h3>
+      <hr>
+      <div id="cart">
+          <div class="resumen-compra">
+              <h4>Resumen de compra</h4>
+              <hr>
+              <p>Total: $<strong id="totalPrice">0</strong></p>
+              <hr>
+              <button type="button">Comprar</button>
+          </div>
+          <div id="cart-products">
+
+          </div>
+      </div>
+  </section>
+
+    </div>
+
+
+    <!-- Pie de página -->
+    <footer>
+      <p>Copyright © 2023</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="./Clases/usuarios.js"></script>
+    <script src="./constants/index.js"></script>
+    <script src="./scripts/main.js"></script>
+
+  </body>
+
+</html>
