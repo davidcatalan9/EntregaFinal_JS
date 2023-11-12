@@ -9,12 +9,12 @@ productsList.addEventListener('click', (e) => {
   if (e.target.classList.contains('addButton')) {
     console.log("carro")
     if (!isUserLogged()) {
-      window.location.href = './pages/login.html';
+      window.location.href = '/paginas/login.html';
       return;
     }
     const product = e.target.parentElement;
     const infoProduct = {
-      name: product.querySelector('h2').textContent,
+      name: product.querySelector('h4').textContent,
       quantity: 1,
       price: product.querySelector('p').textContent,
     }

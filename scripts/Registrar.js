@@ -16,7 +16,7 @@ miFormulario.addEventListener('submit', (e) => {
 });
 
 
-const USERNAME_MIN_CHARACTERS = 6;
+const USERNAME_MIN_CHARACTERS = 5;
 const PASSWORD_MIN_CHARACTERS = 4;
 
 const validarFormulario = (userName = '', password = '', repeatPassword = '') => {
@@ -43,6 +43,7 @@ const validarFormulario = (userName = '', password = '', repeatPassword = '') =>
     }
 
     if (password !== repeatPassword) {
+        // @ts-ignore
         showErrorMessages(errorMessage, message = 'Las contraseñas no coinciden.');
         return false;
     }
@@ -58,12 +59,15 @@ const registrarUsuario = (userName, password, repeatPassword) => {
     }
 
     if (isUserExist(usuarios, userName)) {
+        // @ts-ignore
         showErrorMessages(errorMessage, message = 'El nombre de usuario ingresado ya existe.');
         return false;
     }
 
+    // @ts-ignore
     let unUsuario = new User(userName, password);
     usuarios.push(unUsuario);
+    // @ts-ignore
     refreshStorageList(usuarios);
     return true;
 }
