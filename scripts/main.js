@@ -17,9 +17,9 @@ productsList.addEventListener('click', (e) => {
       name: product.querySelector('h4').textContent,
       quantity: 1,
       price: product.querySelectorAll('p')[1].textContent,
-      
+      imagePath: product.querySelector('img').getAttribute('src'),
     }
-    // const precioNumerico = parseFloat(textoPrecio.replace(/[^\d.]/g, ''));
+
 
     const isProductExist = cart.some((product) => product.name === infoProduct.name)
     if (isProductExist) {
@@ -60,8 +60,10 @@ const showHTMLProducts = () => {
     const containerProduct = document.createElement('div');
     containerProduct.classList.add('cart-product');
 
+    // <img src="./media/img/${getImageName(product.name)}">
     containerProduct.innerHTML = `
-        <img src="./media/img/${getImageName(product.name)}">
+        <img src="${product.imagePath}" class="ImgRelojCh">
+
         <div class="info-product">
           <button type="button" class="icon-close">X</button>  
           <h3 class="productName">${product.name}</h3>

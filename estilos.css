@@ -49,7 +49,11 @@ body {
     width:350px;
     height:350px;
 }
-  
+
+.ImgRelojCh {
+  width: 100px;
+  height: auto;
+}
 
   /* Estilo personalizado para el tamaño del texto del menú */
 .navbar-nav.navbar-nav-lg .nav-link {
