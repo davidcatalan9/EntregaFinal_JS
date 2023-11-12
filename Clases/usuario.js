@@ -3,6 +3,7 @@ class User {
         this.userName = userName;
         this.password = password;
         this.isLogged = false;
+        this.session = [];
     }
 
     toString = () => {
