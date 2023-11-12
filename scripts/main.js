@@ -16,8 +16,10 @@ productsList.addEventListener('click', (e) => {
     const infoProduct = {
       name: product.querySelector('h4').textContent,
       quantity: 1,
-      price: product.querySelector('p').textContent,
+      price: product.querySelectorAll('p')[1].textContent,
+      
     }
+    // const precioNumerico = parseFloat(textoPrecio.replace(/[^\d.]/g, ''));
 
     const isProductExist = cart.some((product) => product.name === infoProduct.name)
     if (isProductExist) {
